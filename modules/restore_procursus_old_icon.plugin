@@ -8,12 +8,12 @@
 #!loon_version = 
 #!homepage = https://github.com/invalidunit/loon_modules
 #!icon = https://invalidunit.github.io/bark_icons/procursus/procursus@3x.png
-#!date = 2024-11-06 20:46:21
+#!date = 2025-01-16 22:26:12
 
 [Rewrite]
-^https?:\/\/apt\.procurs\.us.*CydiaIcon@3x\.png mock-response-body data-type=png data-path="https://invalidunit.github.io/bark_icons/procursus/procursus@3x.png"
-^https?:\/\/apt\.procurs\.us.*CydiaIcon@2x.png mock-response-body data-type=png data-path="https://invalidunit.github.io/bark_icons/procursus/procursus@2x.png"
-^https?:\/\/apt\.procurs\.us.*CydiaIcon.png mock-response-body data-type=png data-path="https://invalidunit.github.io/bark_icons/procursus/procursus.png"
+^https?:\/\/apt\.procurs\.us.*CydiaIcon@3x\.png header https://invalidunit.github.io/bark_icons/procursus/procursus@3x.png
+^https?:\/\/apt\.procurs\.us.*CydiaIcon@2x.png header https://invalidunit.github.io/bark_icons/procursus/procursus@2x.png
+^https?:\/\/apt\.procurs\.us.*CydiaIcon.png header https://invalidunit.github.io/bark_icons/procursus/procursus.png
 
 [MitM]
 hostname = apt.procurs.us
